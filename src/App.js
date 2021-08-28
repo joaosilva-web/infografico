@@ -6,7 +6,7 @@ import { BrowserRouter as Router,
 
 /*import Planet from "./components/Planet/Planet";*/
 import ChoiceRoute from "./Pages/ChoiceRoute/ChoiceRoute";
-import Sol from './Pages/Sol/Sol';
+import Sol from './Pages/Sol';
 import Mercurio from './Pages/Mercurio';
 import Venus from './Pages/Venus';
 import Terra from './Pages/Terra';

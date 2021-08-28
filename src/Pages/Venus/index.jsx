@@ -24,7 +24,6 @@ function Venus() {
         .get(`/find/Venus`)
         .then(response => {
           setInfo(response.data);
-          console.log(response.data);
         })
         .catch((err) => {
           console.error("ops! ocorreu um erro" + err);

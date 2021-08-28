@@ -1,5 +1,5 @@
 import { OrbitControls, Stars } from "@react-three/drei";
-import { Canvas, useLoader } from "@react-three/fiber";
+import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
 import React, { useState, useEffect } from "react";
 import Astronaut from "../../Astronaut1";
@@ -23,7 +23,6 @@ function MercurioP() {
         .get(`/find/Mercurio`)
         .then(response => {
           setInfo(response.data);
-          console.log(response.data);
         })
         .catch((err) => {
           console.error("ops! ocorreu um erro" + err);

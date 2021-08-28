@@ -7,7 +7,7 @@ import { useGLTF } from '@react-three/drei'
 
 export default function Model(props) {
   const group = useRef()
-  const { nodes, materials } = useGLTF('/Saturn.glb')
+  const { nodes } = useGLTF('/Saturn.glb')
   return (
     <group ref={group} {...props} dispose={null}>
       <mesh geometry={nodes.Asset3DLoadersceneRoot.geometry} material={nodes.Asset3DLoadersceneRoot.material} scale={0.019}/>

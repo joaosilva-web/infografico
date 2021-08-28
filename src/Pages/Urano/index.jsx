@@ -24,7 +24,6 @@ function Urano() {
         .get(`/find/Urano`)
         .then(response => {
           setInfo(response.data);
-          console.log(response.data);
         })
         .catch((err) => {
           console.error("ops! ocorreu um erro" + err);
