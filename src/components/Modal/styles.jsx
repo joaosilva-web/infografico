@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { MdClose } from 'react-icons';
 
 export const Background = styled.div`
     width: 100%;
