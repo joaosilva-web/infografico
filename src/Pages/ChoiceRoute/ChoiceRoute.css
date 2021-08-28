@@ -1,0 +1,112 @@
+.ChoiceRoute {
+    width: 100%;
+    height: 100%;
+}
+
+.panel {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+
+
+    position: absolute;
+    width: 20%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    z-index: 999;
+}
+
+select {
+    appearance: none;
+    width: 100%;
+    outline: 0;
+    box-shadow: none;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    font-size: 22px;
+    padding: 1rem 6rem 1rem 1rem;
+}
+
+select::-ms-expand {
+    background: transparent;
+}
+
+option {
+    color: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+}
+
+.select {
+    position: relative;
+    border: 1px solid white!important;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.custom-arrow{
+    color: rgba(255, 255, 255, 0.473);
+    width: 3rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1rem;
+    font-size: 22px;
+    cursor: pointer;
+    pointer-events: none;
+    transition: .25s ease;
+    background-color: rgba(15, 15, 15, 0.301);
+}
+
+.custom-arrow:hover{
+    color: #fff;
+    background-color: aqua;
+}
+
+.custom-arrow::before,
+.custom-arrow::after {
+    --size: .5rem;
+
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.custom-arrow::before {
+    border-left: var(--size) solid transparent;
+    border-right: var(--size) solid transparent;
+    border-bottom: var(--size) solid rgba(255, 255, 255, 0.5);
+
+    top: 40%;
+}
+
+.custom-arrow::after {
+    border-left: var(--size) solid transparent;
+    border-right: var(--size) solid transparent;
+    border-top: var(--size) solid rgba(255, 255, 255, 0.5);
+
+    top: 65%;
+}
+
+input[type="submit"]{
+    color: black;
+}
+
+button {
+    width: 100%;
+    height: 36px;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-top: 10px;
+}
